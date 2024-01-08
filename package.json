@@ -1,0 +1,42 @@
+{
+  "name": "jic-site-components",
+  "version": "1.0.0",
+  "description": "components from granular to whole sections to use for the building of websites",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build:ts": "tsc",
+    "build:scss": "copyfiles -u 1 \"src/**/*.scss\" dist",
+    "build": "npm run build:scss  && npm run build:ts ",
+    "test": "test",
+    "watch": "concurrently \"tsc --watch\" \"nodemon\""
+  },
+  "keywords": [
+    "components"
+  ],
+  "author": "Joe Christianson",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.7",
+    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "@babel/preset-env": "^7.23.7",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@types/react": "^18.2.47",
+    "css-loader": "^6.8.1",
+    "sass": "^1.69.7",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "@types/react": "18.2.23",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "g": "^2.0.1"
+  }
+}
