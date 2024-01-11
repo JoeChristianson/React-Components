@@ -11,7 +11,6 @@ const FullHeightSection = ({children,className}: Props) => {
     const fullClassName = `${styles.section} ${className||""}`
 
     return <section className={fullClassName}>
-        <h2>Heyo</h2>
         {children}
     </section>
 }

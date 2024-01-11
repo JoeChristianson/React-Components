@@ -1,6 +1,10 @@
+@import "../../../../style/mixins";
 .nav{
     ul{
-        list-style: none;
+        @include ul-reset;
+        display: flex;
+        flex-direction: row;
+        gap:1rem;
         li{
             a{
                 text-decoration: none;

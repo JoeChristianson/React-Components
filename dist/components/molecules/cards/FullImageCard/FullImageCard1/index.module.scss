@@ -1,0 +1,25 @@
+@import "../../../../../style/mixins";
+.div{
+    height: clamp(300px,25vw,500px);
+    width: clamp(300px,25vw,500px);
+    position: relative;
+    .text{
+        padding:10px 20px ;
+        h3{
+            font-size: clamp(2rem,5vw,3rem);
+            text-transform: clamp(1.2rem,3vw,1.8rem);
+        }
+        h4{
+            font-weight:500;
+        }
+    }
+
+}
+
+.img{
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    @include bg-image;
+}

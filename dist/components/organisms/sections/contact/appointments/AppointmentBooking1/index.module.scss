@@ -1,0 +1,36 @@
+.section{
+    padding:clamp(20px,5vw,100px);
+    .left{
+        display: flex;
+        justify-content: center;
+
+        .stele-cont{
+            height: 700px;
+        }
+    }
+    @media screen and (max-width:950px) {
+        padding: 0;
+        .side-by-side{
+            padding-top: 100px;
+
+            grid-template-columns: 1fr;
+            .stele-cont{
+                height: 50vh;
+            }
+            .form-cont{
+                padding:20px;
+                padding-top: 50px;
+                background:rgba(128, 128, 128, 0.068);
+                width:100vw;
+                padding-bottom: 50px;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                }
+                input,textarea,select{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

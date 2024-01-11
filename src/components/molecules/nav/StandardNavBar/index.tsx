@@ -15,7 +15,7 @@ const NavBar = ({navItems,className}: Props) => {
         <ul>
             {navItems.map((item,index)=>{
                 const {name,href} = item
-                return <li>
+                return <li key={index}>
                     <a href={href}>
                         {name}
                     </a>

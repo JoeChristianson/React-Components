@@ -1,0 +1,22 @@
+.div{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .stele{
+        height: 100%;
+        width: 70%;
+        background:rgb(236, 126, 126);
+        position: absolute;
+        z-index: 0;
+        bottom:0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    img{
+        position: relative;
+        height: 90%;
+        z-index: 1;
+    }
+}

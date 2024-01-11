@@ -6,7 +6,7 @@ var NavBar = function (_a) {
     return React.createElement("nav", { className: fullClassName },
         React.createElement("ul", null, navItems.map(function (item, index) {
             var name = item.name, href = item.href;
-            return React.createElement("li", null,
+            return React.createElement("li", { key: index },
                 React.createElement("a", { href: href }, name));
         })));
 };

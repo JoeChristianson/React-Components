@@ -1,0 +1,6 @@
+@import "../../../../../style/mixins";
+
+.section{
+    height: 50vh;
+    @include bg-image;
+}

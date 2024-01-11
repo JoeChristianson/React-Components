@@ -1,0 +1,29 @@
+@import "../../../../../style/mixins";
+.div{
+    display: flex;
+    flex-direction: column;
+    .form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+        gap:15px;
+        max-width: 600px;
+        flex-grow: 1;
+        input,textarea,select{
+            box-shadow: 5px 5px 2px 2px rgba(187, 187, 187, 0.487);
+            font-size: 1.4rem;
+            width: 100%;
+            border: none;
+            padding:1em;
+        }
+        .textarea-cont{
+            grid-column: 1 / 3;
+            textarea{
+                height: 12em;
+            }
+        }
+    }
+    h4{
+        @include h4;
+    }
+}
