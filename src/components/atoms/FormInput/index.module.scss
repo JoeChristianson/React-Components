@@ -1,0 +1,23 @@
+.div{
+    width: 100%;
+    display: flex;
+    padding:10px 0;
+    &.half{
+        width:50%;
+        input,textarea,select{
+            width: calc(100% - 10px);
+        }
+    }
+    input,textarea,select{
+        flex-grow: 1;
+        font-family: inherit;
+        padding:1.5em 2em;
+        border:none;
+        width: unset;
+        box-shadow: 3px 5px 3px rgba(128, 128, 128, 0.364);
+    }
+    textarea{
+        resize: none;
+        height: 16em;
+    }
+}

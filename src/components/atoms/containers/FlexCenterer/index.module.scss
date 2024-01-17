@@ -1,0 +1,16 @@
+.reverse{
+    flex-direction: row-reverse;
+}
+.div{
+    display: flex;
+    margin: auto;
+    >*{
+        width:50%;
+    }
+    @media screen and (max-width:850px) {
+        flex-direction: column;
+        >*{
+            width: 100%;
+        }
+    }
+}

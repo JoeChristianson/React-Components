@@ -1,0 +1,16 @@
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    .submit-cont{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 20px;
+        button{
+            padding:.7em 2em;
+            h3{
+                text-transform: uppercase;
+            }
+        }
+    }
+}

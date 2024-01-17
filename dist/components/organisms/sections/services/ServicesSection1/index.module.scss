@@ -1,0 +1,44 @@
+.section{
+    .reverse{
+        .left{
+            grid-column: 2 /3;
+            grid-row: 1 /2;
+        }
+        .right{
+            grid-column: 1 / 2;
+            grid-row: 1 /2;
+        }
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding:70px;
+        .services{
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            .service{
+                text-transform: uppercase;
+                padding: .7em 0;
+                strong{
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+    .right{
+        height: 100%;
+        .stele{
+            >div{
+                height: 60%;
+            width: clamp(300px,30vw,600px);
+            }
+        }
+        img{
+            margin: auto;
+            width: clamp(200px,30vw,475px);
+        }
+    }
+}

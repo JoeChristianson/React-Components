@@ -17,7 +17,7 @@ const fullClassName = styles.header+" " + className||""
 
     return <header className={fullClassName}>
          <div className={styles.left}>
-            <img src={src} alt={alt}></img>
+            <img src={src}></img>
             {children}
          </div>
          <div className={styles.right}>

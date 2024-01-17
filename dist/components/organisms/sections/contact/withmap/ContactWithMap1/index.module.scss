@@ -1,0 +1,16 @@
+.section{
+    .centerer{
+        max-width: 1200px;
+
+        >div:first-of-type{
+            width: 0;
+        }
+    }
+    .left{
+        background:rgb(245, 245, 245);
+        padding:30px;
+        h1{
+            font-size: 3rem;
+        }
+    }
+}

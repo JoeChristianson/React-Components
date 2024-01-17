@@ -1,0 +1,24 @@
+.section{
+    .team-cont{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:3%;
+        .stele-cont{
+            width: clamp(250px,28vw,400px);
+        }
+    }
+    .text-cont{
+        transform: translateX(8%);
+        >*{
+            margin-top: 1em;
+        }
+        h2{
+            font-weight: 600;
+        }
+        h5{
+            font-weight: 400;
+        }
+    }
+}

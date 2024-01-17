@@ -14,7 +14,7 @@ var About1 = function (_a) {
                 React.createElement(FadeInTowards, { className: styles.left },
                     React.createElement(ImageStele, { src: img, alt: alt, steleBg: steleBg, className: styles.stele })),
                 React.createElement(FadeInTowards, { direction: "down", className: styles.right },
-                    React.createElement(LightBoldHeading, { lightHeading: "Our Story", boldHeading: "Beauty Salon" }),
+                    React.createElement(LightBoldHeading, { lightHeading: smallHeading || "Our Story", boldHeading: bigHeading || "Our Company" }),
                     React.createElement("div", { className: styles.ps },
                         React.createElement(ParagraphSplitter, { text: text }))))));
 };

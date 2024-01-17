@@ -21,7 +21,7 @@ const fullClassName = styles.div+" " + className||""
     }
 
     return <div className={fullClassName}>
-        <input placeholder={label||name} onChange={handleChange} value={formValues[name]}>
+        <input placeholder={label||name} onChange={handleChange} value={formValues[name]}/>
     </div>
 }
 

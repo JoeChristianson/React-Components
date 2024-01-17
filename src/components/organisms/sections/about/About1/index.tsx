@@ -35,8 +35,8 @@ const fullClassName = styles.section+" " + className||""
                 </FadeInTowards>
             <FadeInTowards direction="down" className={styles.right}>
                 <LightBoldHeading
-                lightHeading="Our Story"
-                boldHeading="Beauty Salon"
+                lightHeading={smallHeading||"Our Story"}
+                boldHeading={bigHeading||"Our Company"}
                 />
                 <div className={styles.ps}>
                 <ParagraphSplitter text={text}></ParagraphSplitter>
