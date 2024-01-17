@@ -41,4 +41,22 @@
             width: clamp(200px,30vw,475px);
         }
     }
+    @media screen and (max-width:800px) {
+        >div{
+            display: flex;
+            flex-direction: column-reverse;
+            .left{
+                padding:20px;
+                .heading{
+                    text-align: center;
+
+                }
+                >.services{
+                    margin-top: 20px;
+                    display: block !important;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }

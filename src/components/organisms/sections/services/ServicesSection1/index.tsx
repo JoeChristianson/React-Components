@@ -23,6 +23,7 @@ const fullClassName = styles.section+" " + className||""
         <SideBySide className={reverse?styles.reverse:""}>
             <div className={styles.left}>
             <HeadingWithSuperscript
+            className={styles.heading}
             heading={category}
             superscript={overheading}
             ></HeadingWithSuperscript>
