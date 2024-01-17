@@ -9,7 +9,7 @@ var ServicesSection1 = function (_a) {
     return React.createElement("section", { className: fullClassName },
         React.createElement(SideBySide, { className: reverse ? styles.reverse : "" },
             React.createElement("div", { className: styles.left },
-                React.createElement(HeadingWithSuperscript, { heading: category, superscript: overheading }),
+                React.createElement(HeadingWithSuperscript, { className: styles.heading, heading: category, superscript: overheading }),
                 React.createElement("div", { className: styles.services }, services.map(function (service, index) {
                     var name = service.name, price = service.price;
                     return React.createElement("div", { className: styles.service, key: index },

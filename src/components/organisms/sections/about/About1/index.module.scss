@@ -7,6 +7,7 @@
         max-width: 1000px;
         display: flex;
         gap:100px;
+        width: 90vw;
         .left{
             width: 40%;
             padding:0px;
@@ -30,6 +31,19 @@
                     margin-bottom: 1.5em;
                 }
             } 
+        }
+    }
+    @media screen and (max-width:600px) {
+        .side-by-side{
+            width: 100%;
+            flex-direction: column;
+            .left{
+                width: 100%;
+            }
+            .right{
+                width: 100%;
+                padding:30px;
+            }
         }
     }
 }
