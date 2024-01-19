@@ -1,6 +1,6 @@
 {
   "name": "@sitestitch/jic-site-components",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "components from granular to whole sections to use for the building of websites",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
