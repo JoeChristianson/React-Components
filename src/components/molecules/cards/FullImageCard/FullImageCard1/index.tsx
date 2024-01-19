@@ -1,3 +1,4 @@
+import makeAlt from "../../../../../utils/images/makeAlt"
 import TopCornerRotateText from "../../../../../components/atoms/containers/rotators/text/TopCornerRotateText"
 import bgImage from "../../../../../utils/images/bgImage"
 import styles from "./index.module.scss"
@@ -18,7 +19,7 @@ const FullImageCard1 = ({alt,image,heading,subheading,className}: Props) => {
         backgroundImage:bgImage(image)
     }
 
-    return <div role="img" aria-label={alt} className={fullClassName}>
+    return <div role="img" aria-label={alt||makeAlt(image)} className={fullClassName}>
         <div className={styles.img} style={style}></div>
         <TopCornerRotateText className={styles.text}>
             <h3>{heading}</h3>

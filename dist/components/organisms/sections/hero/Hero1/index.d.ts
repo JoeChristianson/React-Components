@@ -6,6 +6,7 @@ type Props = {
     image: string;
     ctaHref?: string;
     className?: string;
+    imageAlt?: string;
 };
-declare const Hero1: ({ boldHeading, lightHeading, paragraph, className, image, ctaHref }: Props) => React.JSX.Element;
+declare const Hero1: ({ boldHeading, lightHeading, paragraph, className, image, ctaHref, imageAlt }: Props) => React.JSX.Element;
 export default Hero1;

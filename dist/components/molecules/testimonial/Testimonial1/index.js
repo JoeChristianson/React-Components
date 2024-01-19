@@ -5,6 +5,7 @@ import SideBySide from "../../../../components/atoms/containers/SideBySide";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import FadeInTowards from "../../../../components/atoms/containers/AnimatedDivs/FadeInTowards";
+import makeAlt from "../../../../utils/images/makeAlt";
 var Testimonial1 = function (_a) {
     var className = _a.className, testimonial = _a.testimonial, reverse = _a.reverse;
     var fullClassName = "".concat(styles.article, " ").concat(className || "", " ").concat(reverse && styles.reverse);
@@ -12,7 +13,7 @@ var Testimonial1 = function (_a) {
     return React.createElement("article", { className: fullClassName },
         React.createElement(SideBySide, { className: styles['side-by-side'] },
             React.createElement(FadeInTowards, { className: styles.left, direction: reverse ? "right" : "left" },
-                React.createElement("img", { src: img, alt: alt })),
+                React.createElement("img", { src: img, alt: alt || makeAlt(img) })),
             React.createElement(FadeInTowards, { className: styles.right, direction: "up" },
                 React.createElement("div", { className: styles['quote-sign'] },
                     React.createElement(FontAwesomeIcon, { icon: faQuoteLeft, size: "lg" })),

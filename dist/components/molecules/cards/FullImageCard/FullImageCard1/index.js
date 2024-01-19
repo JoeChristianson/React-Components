@@ -1,3 +1,4 @@
+import makeAlt from "../../../../../utils/images/makeAlt";
 import TopCornerRotateText from "../../../../../components/atoms/containers/rotators/text/TopCornerRotateText";
 import bgImage from "../../../../../utils/images/bgImage";
 import styles from "./index.module.scss";
@@ -8,7 +9,7 @@ var FullImageCard1 = function (_a) {
     var style = {
         backgroundImage: bgImage(image)
     };
-    return React.createElement("div", { role: "img", "aria-label": alt, className: fullClassName },
+    return React.createElement("div", { role: "img", "aria-label": alt || makeAlt(image), className: fullClassName },
         React.createElement("div", { className: styles.img, style: style }),
         React.createElement(TopCornerRotateText, { className: styles.text },
             React.createElement("h3", null, heading),
