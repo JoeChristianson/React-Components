@@ -1,4 +1,12 @@
 .section{
     display: flex;
     align-items: center;
+    @media screen and (max-width:600px) {
+        .right{
+            padding:20px;
+            p{
+                margin-right: 0;
+            }
+        }
+    }
 }
