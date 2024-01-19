@@ -14,9 +14,13 @@ import ImageAndTextSideBySide from "./components/organisms/sections/image-and-te
 import Paragraph from "./components/atoms/text/Paragraph";
 import Team1 from "./components/organisms/sections/team/Team1";
 import ContactWithMap1 from "./components/organisms/sections/contact/withmap/ContactWithMap1";
+import CodingProjects1 from "./components/organisms/sections/projects/coding/CodingProjects1";
+import CodingProjects2 from "./components/organisms/sections/projects/coding/CodingProjects2";
 export {
     About1,
     AppointmentBooking1,
+    CodingProjects1,
+    CodingProjects2,
     ContactWithMap1,
     FullHeightSection,
     FullWidthImageSection,
@@ -32,3 +36,4 @@ export {
     Testimonials1,
     ThreeGrid1
 }
+

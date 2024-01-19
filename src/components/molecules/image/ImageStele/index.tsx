@@ -2,6 +2,7 @@
 import styles from "./index.module.scss"
 import React from "react"
 import {motion} from "framer-motion"
+import makeAlt from "../../../../utils/images/makeAlt"
 
 type Props = {
     className?:string
@@ -38,7 +39,7 @@ const fullClassName = `${styles.div} ${className}`
     return <div className={fullClassName}>
                 {animated&&<motion.div transition={{delay:delay||0,duration:1}} whileInView="visible" variants={variants} style={{...steleStyle,...variants.hidden}} className={styles.stele}></motion.div>}
                 {!animated&&<motion.div style={{...steleStyle,...variants.hidden,clipPath:""}} className={styles.stele}></motion.div>}
-                <img src={src} alt={alt}></img>
+                <img src={src} alt={alt||makeAlt(src)}></img>
             </div>
 }
 

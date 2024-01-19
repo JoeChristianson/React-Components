@@ -6,6 +6,7 @@ import SideBySide from "../../../../components/atoms/containers/SideBySide"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons"
 import FadeInTowards from "../../../../components/atoms/containers/AnimatedDivs/FadeInTowards"
+import makeAlt from "../../../../utils/images/makeAlt"
 
 type Props = {
 className?:string
@@ -22,7 +23,7 @@ const fullClassName = `${styles.article} ${className||""} ${reverse&&styles.reve
     return <article className={fullClassName}>
         <SideBySide className={styles['side-by-side']}>
         <FadeInTowards className={styles.left} direction={reverse?"right":"left"}>
-        <img src={img} alt={alt}/>
+        <img src={img} alt={alt||makeAlt(img)}/>
         </FadeInTowards>
         <FadeInTowards className={styles.right} direction="up">
 

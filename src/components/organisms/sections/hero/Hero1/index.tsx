@@ -7,6 +7,7 @@ import PaddedDiv from "../../../../atoms/containers/PaddedDiv"
 import ParagraphSplitter from "../../../../molecules/element-plus/ParagraphSplitter"
 import ImageBottomDiv from "../../../../molecules/image/ImageBottomDiv"
 import BounceButton from "../../../../atoms/buttons/BounceButton"
+import makeAlt from "../../../../../utils/images/makeAlt"
 
 type Props = {
     boldHeading:string
@@ -15,9 +16,10 @@ type Props = {
     image:string
     ctaHref?:string
     className?:string
+    imageAlt?:string
 }
 
-const Hero1 = ({boldHeading,lightHeading,paragraph,className,image,ctaHref}: Props) => {
+const Hero1 = ({boldHeading,lightHeading,paragraph,className,image,ctaHref,imageAlt}: Props) => {
     
     const fullClassName = `${styles.section} ${className||""}`
     
@@ -48,7 +50,7 @@ const Hero1 = ({boldHeading,lightHeading,paragraph,className,image,ctaHref}: Pro
             <ImageBottomDiv
             className={styles["image-cont"]}
             src={image}
-            alt="woman-in-diamond-necklace"
+            alt={imageAlt||makeAlt(image)}
             ></ImageBottomDiv>
         </SideBySide>
     </FullHeightSection>

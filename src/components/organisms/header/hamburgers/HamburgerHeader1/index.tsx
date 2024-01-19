@@ -17,8 +17,10 @@ const fullClassName = styles.header+" " + className||""
 
     return <header className={fullClassName}>
          <div className={styles.left}>
+            <a href="/">
             <img src={src}></img>
             {children}
+            </a>
          </div>
          <div className={styles.right}>
             <HamburgerNav1

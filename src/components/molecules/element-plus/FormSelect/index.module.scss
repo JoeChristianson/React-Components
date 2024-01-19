@@ -1,0 +1,20 @@
+.div{
+    position: relative;
+    cursor: pointer;
+    &::after{
+            content:"";
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #333; /* Adjust the color as needed */
+            pointer-events: none;
+    }
+    select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+}

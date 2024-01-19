@@ -1,3 +1,4 @@
+import makeAlt from "../../../../utils/images/makeAlt"
 import styles from "./index.module.scss"
 import React from "react"
 
@@ -12,7 +13,7 @@ const FullWidthImage = ({className,src,alt}: Props) => {
 const fullClassName = styles.img+" " + className||""
 
     return <img className={fullClassName}
-    src={src} alt={alt}
+    src={src} alt={alt||makeAlt(src)}
     ></img>
 }
 

@@ -4,10 +4,13 @@
     align-items: center;
     justify-content: space-between;
     .left{
-        display: flex;
-        align-items: center;
-        img{
-            height: 80px;
+        a{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            img{
+                height: 80px;
+            }
         }
     }
 }

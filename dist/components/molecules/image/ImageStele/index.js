@@ -13,6 +13,7 @@ var __assign = (this && this.__assign) || function () {
 import styles from "./index.module.scss";
 import React from "react";
 import { motion } from "framer-motion";
+import makeAlt from "../../../../utils/images/makeAlt";
 var ImageStele = function (_a) {
     var className = _a.className, src = _a.src, alt = _a.alt, steleBg = _a.steleBg, widthPercentage = _a.widthPercentage, heightPercentage = _a.heightPercentage, xTranslate = _a.xTranslate, delay = _a.delay, animated = _a.animated;
     var fullClassName = "".concat(styles.div, " ").concat(className);
@@ -33,6 +34,6 @@ var ImageStele = function (_a) {
     return React.createElement("div", { className: fullClassName },
         animated && React.createElement(motion.div, { transition: { delay: delay || 0, duration: 1 }, whileInView: "visible", variants: variants, style: __assign(__assign({}, steleStyle), variants.hidden), className: styles.stele }),
         !animated && React.createElement(motion.div, { style: __assign(__assign(__assign({}, steleStyle), variants.hidden), { clipPath: "" }), className: styles.stele }),
-        React.createElement("img", { src: src, alt: alt }));
+        React.createElement("img", { src: src, alt: alt || makeAlt(src) }));
 };
 export default ImageStele;
