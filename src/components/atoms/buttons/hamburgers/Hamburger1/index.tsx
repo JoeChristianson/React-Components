@@ -1,6 +1,7 @@
+"use client"
 import NavItem from "../../../../../types/NavItem"
 import styles from "./index.module.scss"
-import React from "react"
+import React, { MouseEventHandler, useState } from "react"
 
 type Props = {
 className?:string
@@ -10,10 +11,17 @@ className?:string
 const Hamburger1 = ({className,navItems}: Props) => {
 
 const fullClassName = styles.div+" " + className||""
+const [checked,setChecked] = useState(false)
 
-    return <div className={fullClassName}>
+    const handleParentClick:MouseEventHandler<any> = (e)=>{
+        setChecked(!checked)
+    }
+
+    return<>
+        <div onClick={handleParentClick} className={styles.clicker}></div>
+    <div    className={fullClassName}>
         <label>
-            <input type="checkbox"/>
+            <input checked={checked} type="checkbox"/>
             <span className={styles.menu}> <span className={styles.hamburger}></span> </span>
             <ul>
                 {navItems.map((navItem,index)=>{
@@ -23,6 +31,7 @@ const fullClassName = styles.div+" " + className||""
             </ul>
         </label>
         </div>
+                </> 
 }
 
 export default Hamburger1

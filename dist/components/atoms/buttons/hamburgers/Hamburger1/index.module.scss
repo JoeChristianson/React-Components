@@ -1,3 +1,13 @@
+.clicker{
+  position: absolute;
+  right: 40px;
+  top: 60px;
+  width:40px;
+  height: 40px;
+  z-index: 200;
+  cursor: pointer;
+}
+
 .div{
   --xColor:grey;
   label .menu {
