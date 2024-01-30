@@ -1,0 +1,18 @@
+.section{
+    padding:0;
+    display: flex;
+    .right{
+        width: 45%;
+        .top{
+            height: 45%;
+            background: grey;
+        }
+        .bottom{
+            height: 55%;
+        }
+    }
+    .left{
+        width: 55%;
+        height: 700px;
+    }
+}

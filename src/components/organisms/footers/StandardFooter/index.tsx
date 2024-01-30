@@ -16,7 +16,6 @@ const StandardFooter = ({className,socials,src,alt,logoText}: Props) => {
 
 const fullClassName = styles.footer+" " + className||""
 
-    console.log({socials})
 
     return <footer className={fullClassName}>
         <div className={styles.left}>

@@ -1,0 +1,14 @@
+.section{
+    max-height: 80vh;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:6px rgb(255, 255, 255) dashed;
+    width: 100%;
+    color:rgb(179, 179, 179);
+    background:rgb(25, 25, 25);
+    h1{
+        font-size: 4rem;
+    }
+}

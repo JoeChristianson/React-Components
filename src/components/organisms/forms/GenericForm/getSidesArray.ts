@@ -7,7 +7,6 @@ type Args = {
 type Side = "left" | "right" |"full"
 
 const getSidesArray = ({inputs}: Args) => {
-    console.log({inputs})
     const array:Side[] = []
     inputs.forEach((input,index)=>{
         if(input.width===2||!input.width){

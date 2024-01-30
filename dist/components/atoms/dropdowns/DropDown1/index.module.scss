@@ -1,0 +1,12 @@
+.div{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    transform: translateY(99%);
+    background:black;
+    width: 300px;
+    a{
+        justify-content: flex-start !important;
+        color:inherit !important;
+    }
+}

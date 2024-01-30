@@ -1,6 +1,5 @@
 var getSidesArray = function (_a) {
     var inputs = _a.inputs;
-    console.log({ inputs: inputs });
     var array = [];
     inputs.forEach(function (input, index) {
         if (input.width === 2 || !input.width) {

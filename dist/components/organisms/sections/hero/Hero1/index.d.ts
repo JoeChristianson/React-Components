@@ -1,9 +1,9 @@
 import React from "react";
 type Props = {
-    boldHeading: string;
-    lightHeading: string;
-    paragraph: string;
-    image: string;
+    boldHeading?: string;
+    lightHeading?: string;
+    paragraph?: string;
+    image?: string;
     ctaHref?: string;
     className?: string;
     imageAlt?: string;

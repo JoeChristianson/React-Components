@@ -7,7 +7,6 @@ var FormInput = function (_a) {
     var _b = useState(""), value = _b[0], setValue = _b[1];
     var isHalf = width === 1;
     var fullClassName = "".concat(styles.div, " ").concat(className || "", " ").concat(isHalf ? styles.half : "");
-    console.log({ fullClassName: fullClassName });
     useEffect(function () {
         handleInputChange({ value: value, name: name });
     }, [value]);

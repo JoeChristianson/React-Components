@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 type Card = {
     image: string;
     alt: string;
@@ -8,6 +8,7 @@ type Card = {
 type Props = {
     cards: Card[];
     className?: string;
+    heading?: ReactNode;
 };
-declare const ThreeGrid1: ({ cards, className }: Props) => React.JSX.Element;
+declare const ThreeGrid1: ({ cards, className, heading }: Props) => React.JSX.Element;
 export default ThreeGrid1;

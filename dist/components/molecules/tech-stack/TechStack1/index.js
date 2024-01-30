@@ -10,8 +10,7 @@ var TechStack1 = function (_a) {
     });
     var fullClassName = "".concat(styles['tech-stack-list'], " ").concat(isIntersecting ? styles['visible'] : styles.invisible);
     return React.createElement("div", { ref: ref, className: fullClassName }, images.map(function (img, index) {
-        return React.createElement("div", { className: styles['icon-wrapper'] },
-            React.createElement(Icon, { key: index, src: img }));
+        return React.createElement("div", { className: styles['icon-wrapper'] });
     }));
 };
 export default TechStack1;

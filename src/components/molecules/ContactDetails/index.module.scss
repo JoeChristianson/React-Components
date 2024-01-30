@@ -1,0 +1,26 @@
+.div{
+    display: grid;
+    gap:2em;
+    .card{
+        padding:1em 1.5em;
+        border-radius: 10px;
+        color:var(--cardColor);
+        background: var(--cardBackground);
+        display: flex;
+        align-items: center;
+        gap:1.5em;
+        font-size: .9em;
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: var(--circleWidth);
+            height: var(--circleWidth);
+            border-radius: 50%;
+            background:var(--iconCircle);
+            svg{
+                width:var(--iconSize)
+            }
+        }
+    }
+}

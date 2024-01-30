@@ -1,0 +1,1 @@
+type ReviewSourceType = "yelp" | "google";
