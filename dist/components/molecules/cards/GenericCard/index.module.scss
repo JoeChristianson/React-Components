@@ -1,0 +1,14 @@
+.article{
+    width: 300px;
+    background:rgba(247, 247, 247, 0.641);
+    header{
+        height: 440px;
+        overflow: hidden;
+        img{
+            object-fit: cover;
+        }
+    }
+    main{
+        padding:1.5em;
+    }
+}

@@ -1,0 +1,13 @@
+.a{
+    color:inherit;
+    opacity: .8;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+        span{
+            opacity: 1;   
+            scale: 1.1;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.header{
+    --background:black;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 100;
+    font-size: 1rem;
+    padding: 0;
+    background: none;
+    transition: all 1s;
+    .centerer{
+        display: flex;
+        justify-content: space-between;
+        max-width: 90vw;
+        margin: auto;
+        align-items: stretch;
+        span{
+            transition: all 1s;
+        }
+        .left{
+            padding: 20px;
+            img{
+                height: 60px;
+            }
+        }
+    }
+    &.scrolled{
+        background:var(--background);
+        span{
+            transition: all 1s;
+            font-size: 1.1em;
+        }
+    }
+}

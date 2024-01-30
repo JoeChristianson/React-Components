@@ -1,0 +1,8 @@
+.section{
+    --color:rgb(230, 255, 251);
+    color:var(--color);
+    height: 100vh;
+    .video{
+        width: 100%;
+    }
+}

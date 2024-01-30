@@ -1,0 +1,49 @@
+.section{
+    @media screen and (max-width:900px) {
+        padding-top: 70px;
+    }
+    .side-by-side{
+        gap:220px;
+        max-width: 1200px;
+        margin:auto;
+        position: relative;
+        &:after{
+            position: absolute;
+            z-index: 100;
+            content: "";
+            height: 70%;
+            width: 4px;
+            left: 50%;
+            background: #ffffff8f;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        @media screen and (max-width:900px) {
+            gap:100px;
+            display: flex;
+            flex-direction: column;
+            &:after{
+                display: none;
+            }
+        }
+    }
+    form{
+        transform:translateY(-20px);
+        color:var(--cardColor);
+        >div{
+            flex-direction: column;
+            input,textarea,select{
+                margin-top: 1em;
+                background:var(--cardBackground);
+                box-shadow:none;
+                border-radius: 6px;
+            }
+        }
+        button{
+            background:grey;
+            &:hover{
+                background:grey;
+            }
+        }
+    }
+}

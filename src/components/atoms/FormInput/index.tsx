@@ -17,7 +17,6 @@ const FormInput = ({className,formInput,handleInputChange,side}: Props) => {
     const [value,setValue] = useState("")
     const isHalf = width===1
     const fullClassName = `${styles.div} ${className||""} ${isHalf?styles.half:""}`
-    console.log({fullClassName})
 
     useEffect(()=>{
         handleInputChange({value,name})

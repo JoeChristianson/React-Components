@@ -25,10 +25,6 @@ const fullClassName = `${styles['tech-stack-list']} ${isIntersecting?styles['vis
 return <div ref={ref} className={fullClassName}>
     {images.map((img,index)=>{
         return<div className={styles['icon-wrapper']}>
-        <Icon
-        key={index}
-        src={img}
-        ></Icon>
         </div>
     })}
 </div>

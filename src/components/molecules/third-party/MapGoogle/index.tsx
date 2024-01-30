@@ -9,17 +9,17 @@ type Props = {
 className?:string
     coordinates:Coordinates
     apiKey?:string
+    containerStyle?:any
 }
 
-const containerStyle = {
+const d = { containerStyle: {
     width: '50%',
     height: 'unset'
-  };
+  }};
 
-const MapGoogle = ({className,coordinates,apiKey}: Props) => {
+const MapGoogle = ({className,coordinates,apiKey,containerStyle}: Props) => {
 
     const key = apiKey
-    console.log({key})
 
     if(!key){
         return<div>Need API Key</div>
@@ -36,7 +36,7 @@ const MapGoogle = ({className,coordinates,apiKey}: Props) => {
     googleMapsApiKey={key} // Replace with your API key
   >
       <GoogleMap
-        mapContainerStyle={containerStyle}
+        mapContainerStyle={containerStyle||d.containerStyle}
         center={center}
         zoom={zoom}
       ></GoogleMap>

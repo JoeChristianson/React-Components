@@ -8,14 +8,21 @@ import FadeInTowards from "../../../../../components/atoms/containers/AnimatedDi
 
 type Props = {
 className?:string
-    img:string
-    alt:string
-    smallHeading:string
-    bigHeading:string
-    text:string
-    steleBg:string
-
+    img?:string
+    alt?:string
+    smallHeading?:string
+    bigHeading?:string
+    text?:string
+    steleBg?:string
 }
+
+const d = {className:"",
+img:"/images/about/image1.png",
+alt:"",
+smallHeading:"",
+bigHeading:"Glamour Grove",
+text:"",
+steleBg:"#eeddff"}
 
 const About1 = ({className,img,alt,smallHeading,bigHeading,text,steleBg}: Props) => {
 
@@ -26,8 +33,8 @@ const fullClassName = styles.section+" " + className||""
             <>
             <FadeInTowards className={styles.left}>
                 <ImageStele
-                src={img}
-                alt={alt}
+                src={img||d.img}
+                alt={alt||d.alt}
                 steleBg={steleBg}
                 className={styles.stele}
                 ></ImageStele>
@@ -39,7 +46,7 @@ const fullClassName = styles.section+" " + className||""
                 boldHeading={bigHeading||"Our Company"}
                 />
                 <div className={styles.ps}>
-                <ParagraphSplitter text={text}></ParagraphSplitter>
+                <ParagraphSplitter text={text||d.text}></ParagraphSplitter>
                 </div>
                 </FadeInTowards>
             </>

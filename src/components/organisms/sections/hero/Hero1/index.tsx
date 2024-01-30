@@ -10,14 +10,23 @@ import BounceButton from "../../../../atoms/buttons/BounceButton"
 import makeAlt from "../../../../../utils/images/makeAlt"
 
 type Props = {
-    boldHeading:string
-    lightHeading:string
-    paragraph:string
-    image:string
+    boldHeading?:string
+    lightHeading?:string
+    paragraph?:string
+    image?:string
     ctaHref?:string
     className?:string
     imageAlt?:string
 }
+
+// boldHeading="Beauty"
+// lightHeading="Elegance"
+// paragraph="We believe in the art of beauty. Every client is special, and our aim is to make you feel your absolute best. "
+// image="/images/hero-figure.png"
+
+
+const d = {boldHeading:"Beauty",lightHeading:"Elegance"
+,paragraph:"We believe in the art of beauty. Every client is special, and our aim is to make you feel your absolute best. ",image:"/images/hero-figure.png"}
 
 const Hero1 = ({boldHeading,lightHeading,paragraph,className,image,ctaHref,imageAlt}: Props) => {
     
@@ -28,13 +37,13 @@ const Hero1 = ({boldHeading,lightHeading,paragraph,className,image,ctaHref,image
             <PaddedDiv className={styles.left}>
             <div>
             <BoldLightHeading
-            boldHeading={boldHeading}
-            lightHeading={lightHeading}
+            boldHeading={boldHeading||d.boldHeading}
+            lightHeading={lightHeading||d.lightHeading}
             ></BoldLightHeading>
             </div>
             <div className={styles['paragraph-cta']}>
             <ParagraphSplitter
-            text={paragraph}
+            text={paragraph||d.paragraph}
             ></ParagraphSplitter>
             <div className={styles.cta}>
             <a href={ctaHref||"/contact"}>
@@ -49,8 +58,8 @@ const Hero1 = ({boldHeading,lightHeading,paragraph,className,image,ctaHref,image
             </PaddedDiv>
             <ImageBottomDiv
             className={styles["image-cont"]}
-            src={image}
-            alt={imageAlt||makeAlt(image)}
+            src={image||d.image}
+            alt={imageAlt||makeAlt(image||d.image)}
             ></ImageBottomDiv>
         </SideBySide>
     </FullHeightSection>
